@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#input-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#addTitle,
+#addText {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  resize: none;
+  font-size: 16px;
+}
+
+#addTitle::placeholder,
+#addText::placeholder {
+  color: #aaa;
+}
+
+#addNote {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#addNote:hover {
+  background-color: #0056b3;
+}
+
+#notes {
+  margin-top: 20px;
+}
+
+.deleted-notes {
+  margin-top: 40px;
+}
+
+.deleted-notes h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.note {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note .deleteNote,
+.note .restoreNote {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note .deleteNote {
+  background-color: #ff5c5c;
+  color: #fff;
+}
+
+.note .deleteNote:hover {
+  background-color: #d14242;
+}
+
+.note .restoreNote {
+  background-color: #33cc33;
+  color: #fff;
+}
+
+.note .restoreNote:hover {
+  background-color: #2a9d2a;
+}
+
+.note .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.note .text {
+  font-size: 16px;
+  color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  #input-box {
+    padding: 15px;
+  }
+
+  #addTitle,
+  #addText {
+    padding: 10px;
+  }
+
+  #addNote {
+    padding: 10px;
+  }
+
+  .note {
+    padding: 15px;
+  }
+
+  .note .title {
+    font-size: 18px;
+  }
+
+  .note .text {
+    font-size: 14px;
+  }
+  
+  .deleted-notes {
+    margin-top: 30px;
+  }
+
+  .deleted-notes h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .note .deleteNote,
+  .note .restoreNote {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
